@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
+  <title>Dashboard</title>
+  <style>
+    .sidebar{
+      background-color: gray;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 20%;
+    }
+    .header{
+      background-color: gray;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 20%;
+      height: 5%;
+    }
+    .flexbox{
+      display: flex;
+      align-items: center;
+    }
+    .selection,.email,.notification{
+      margin-right: 4%;
+      position: relative;
+    }
+    .email div,.notification div{
+      position: absolute;
+      background-color: lightgray;
+      border-radius: 50%;
+      padding: 2px 4px;
+      top: -8px;
+      right: -6px;
+      font-size: 12px;
+    }
+    .icon{
+      width: 20px;
+    }
+    .profile-pic{
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+    .selection select{
+      background-color: gray;
+      color:white;
+      border: none;
+      font-weight: bold;
+      margin-left: 6px;
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="sidebar">
+    hello
+  </div>
+
+  <div class="header">
+    <div class="flexbox">
+      <div style="
+        margin-right: auto;  
+      ">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+      </div>
+      <div class="email">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+        <div>3</div>
+      </div>
+      <div class="notification">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/9187/9187534.png">
+        <div>4</div>
+      </div>
+      <div class="profile">
+        <img class="profile-pic" src="https://www.shutterstock.com/image-vector/man-character-face-avatar-glasses-600nw-542759665.jpg">   
+      </div>
+      <div class="selection">
+        <select>
+          <option value="profile">profile</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+        </select>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
