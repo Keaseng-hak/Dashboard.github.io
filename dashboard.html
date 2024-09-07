@@ -13,22 +13,77 @@
       top: 0;
       bottom: 0;
       left: 0;
-      width: 20%;
+      width: 200px;
+    }
+    .flexbox-icon{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 48px;
+      margin-bottom: 10px;
+    }
+    .dashboard-pic{
+      width: 16px;
+      margin-right: 10px;
+    }
+    .flexbox-icon img{
+      width: 25px;
+    }
+    .dashboard-section{
+      display: flex;
+      align-items: center;
+      color: white;
+      padding: 12px 14px;
+      transition: background-color,opacity 0.15s; 
+      cursor: pointer;
+      margin-bottom: 6px;
+    }
+    .dashboard-section:hover{
+      background-color:rgb(89, 89, 89);
+    }
+    .dashboard-section:active{
+      opacity: 0.8;
+    }
+    .add{
+      margin-left: auto;
+    }
+    .alert{
+      margin-left: auto;
+      background-color: lightcoral;
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 8px;
     }
     .header{
       background-color: gray;
       position: fixed;
       top: 0;
       right: 0;
-      left: 20%;
+      left: 200px;
       height: 5%;
+    }
+    .menu-section{
+      margin-right: auto;
+      padding: 3px 6px;
+      cursor: pointer;
+      transition: background-color,opacity 0.15s; 
+    }
+    .menu-section:hover{
+      background-color:rgb(89, 89, 89);
+    }
+    .menu-section:active{
+      opacity: 0.8;
+    }
+    .material-symbols-outlined{
+      color:white;
+      font-size: 20px;
     }
     .flexbox{
       display: flex;
       align-items: center;
     }
     .selection,.email,.notification{
-      margin-right: 4%;
+      margin-right: 30px;
       position: relative;
     }
     .email div,.notification div{
@@ -59,14 +114,103 @@
 </head>
 <body>
   <div class="sidebar">
-    hello
+    <div class="container">
+      <div class="flexbox-icon">
+        <img src="   https://cdn-icons-png.flaticon.com/512/11001/11001289.png ">
+        <img src="   https://cdn-icons-png.flaticon.com/512/4394/4394562.png ">
+        <img src="    https://cdn-icons-png.flaticon.com/512/545/545767.png ">
+        <img src="    https://cdn-icons-png.flaticon.com/512/1014/1014849.png ">
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="https://cdn-icons-png.flaticon.com/512/1828/1828673.png">
+        <div>Dashboard</div>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/104/104031.png ">
+        <div>Builders</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/2991/2991110.png ">
+        <div>Forms</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/2280/2280532.png ">
+        <div>UI Features</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/16337/16337538.png ">
+        <div>UI Components</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/16435/16435080.png ">
+        <div>Data table</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/610/610128.png ">
+        <div>Charts</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="https://cdn-icons-png.flaticon.com/512/732/732200.png">
+        <div>Email</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/10691/10691802.png ">
+        <div>Calendar</div>
+        <div class="alert">14</div>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/2098/2098402.png ">
+        <div>Tasks</div>
+        <div class="alert">14</div>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/2659/2659360.png ">
+        <div>Gallery</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/17714/17714144.png ">
+        <div>Users</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+      <div class="dashboard-section">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/854/854878.png ">
+        <div>Map</div>
+        <span class="material-symbols-outlined add">
+          add
+        </span>
+      </div>
+    </div>    
   </div>
 
   <div class="header">
     <div class="flexbox">
-      <div style="
-        margin-right: auto;  
-      ">
+      <div class="menu-section">
         <span class="material-symbols-outlined">
           menu
         </span>
