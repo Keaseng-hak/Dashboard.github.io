@@ -7,6 +7,10 @@
   
   <title>Dashboard</title>
   <style>
+    body{
+      padding-left: 192px;
+      padding-top: 32px;
+    }
     .sidebar{
       background-color: gray;
       position: fixed;
@@ -60,7 +64,7 @@
       top: 0;
       right: 0;
       left: 200px;
-      height: 5%;
+      height: 40px;
     }
     .menu-section{
       margin-right: auto;
@@ -109,6 +113,43 @@
       border: none;
       font-weight: bold;
       margin-left: 6px;
+    }
+    .Dashboard-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: whitesmoke;
+      padding: 12px 6px;
+      width: 100%;
+    }
+    .Dashboard-header div{
+      display: flex;
+      align-items: center;
+    }
+    .widget-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      color: white;
+      column-gap: 20px;
+    }
+    .widget{
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(48, 101, 101);
+      margin-left: 10px;
+      margin-top: 30px;
+      padding: 8px 10px;
+      border-radius: 4px;
+    }
+    .widget-data p{
+      font-size: 30px;
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+    .widget-icon img{
+      width: 50px;
+      margin-top: 4px;
+      margin-bottom: 14px;
     }
   </style>
 </head>
@@ -235,5 +276,74 @@
       </div>
     </div>
   </div>
+
+  <div class="Dashboard-header">
+    <div>Welcome to dashboard</div>
+    <div>
+      <div>
+        <img class="dashboard-pic" src="https://cdn-icons-png.flaticon.com/512/9187/9187534.png">
+      </div>
+      <div>
+        Home
+      </div>
+    </div>
+  </div>
+
+  <div class="widget-container">
+    <div class="widget">
+      <div class="widget-data">
+        <div>Views Today</div>
+        <p>9500</p>
+        <div>Last Week</div>
+        <div>18000</div>
+      </div>
+      <div class="widget-icon">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/159/159604.png ">
+        <div>Last Week</div>
+        <div>18000</div>
+      </div>
+    </div>
+    <div class="widget">      
+      <div class="widget-data">
+        <div>Views Today</div>
+        <p>9500</p>
+        <div>Last Week</div>
+        <div>18000</div>
+      </div>
+      <div class="widget-icon">
+        <img class="dashboard-pic" src="https://cdn-icons-png.flaticon.com/512/8936/8936615.png">
+        <div>Last Months</div>
+        <div>18000</div>
+      </div>
+    </div>
+    <div class="widget">      
+      <div class="widget-data">
+        <div>Views Today</div>
+        <p>9500</p>
+        <div>Last Week</div>
+        <div>18000</div>
+      </div>
+      <div class="widget-icon">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/12695/12695311.png ">
+        <div>Last Week</div>
+        <div>18000</div>
+      </div>
+      </div>
+    <div class="widget">
+      <div class="widget-data">
+        <div>Views Today</div>
+        <p>9500</p>
+        <div>Last Week</div>
+        <div>18000</div>
+      </div>
+      <div class="widget-icon">
+        <img class="dashboard-pic" src="   https://cdn-icons-png.flaticon.com/512/1769/1769096.png ">
+        <div>Last Week</div>
+        <div>18000</div>
+      </div>
+    </div>
+  </div>
+
+  
 </body>
 </html>
