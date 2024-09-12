@@ -4,8 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      padding: 10px;
+    }
+    h1{
+      margin-bottom: 40px;
+    }
+    .search-bar-container{
+      display: flex;
+    }
+    .search-bar{
+      display: flex;
+      margin-bottom: 20px;
+      margin-right: auto;
+    }
+    .page-search-bar input,.search-bar input{
+      border: 1px solid black;
+      padding: 4px;
+    }
+    .page-search-bar button,.search-bar button{
+      background-color: rgb(0, 110, 255);
+    }
+    .page-search-bar button img,.material-symbols-outlined,.search-bar button img{
+      width: 20px;
+      font-size: 20px;
+    }
+    .button-section{
+      display: flex;
+    }
+    .button{
+      margin-right: 10px;
+    }
+    .button button{
+      display: flex;
+    }
+    #record-button{
+      background-color: rgb(0, 110, 255) ;
+    }
+    .page-section-container{
+      display: flex;
+    }
+    .page-section{
+      display: flex;
+      cursor: pointer;
+      transition: background-color,opacity 0.15s;
+    }
+    .page-section button{
+      color: rgb(0, 110, 255);
+    }
+    .page-section button:hover{
+      background-color: rgb(0, 110, 255);
+      color: white;
+      opacity: 0.8;
+    }
+    .page-section button:active{
+      opacity: 0.4;
+    }
+    .page-search-bar{
+      display: flex;
+      margin-left: auto;
+    }
+  </style>
 </head>
 <body>
-    
+  <h1>Read Records</h1>
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <input type="search" placeholder="Type a name">
+      <button>
+        <img src="   https://cdn-icons-png.flaticon.com/512/8915/8915520.png ">
+      </button>
+    </div>
+    <div class="button-section">
+      <div class="button">
+        <button type="button" class="btn btn-danger">
+          <span class="material-symbols-outlined">
+            delete
+          </span>
+          <div class="button-text">Delete Selected</div>
+        </button>
+      </div>
+      <div class="button">
+        <button type="button" class="btn btn-info">
+          <span class="material-symbols-outlined">
+            ios_share
+          </span>
+          <div class="button-text">Export CSV</div>
+        </button>
+      </div>
+      <div class="button">
+        <button type="button" class="btn btn-info" id="record-button">
+          <span class="material-symbols-outlined">
+            add
+          </span>
+          <div class="button-text">Create Record</div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+          <td>Doe</td>
+          <td>Doe</td>
+          <td>
+            <button type="button" class="btn btn-info">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+          <td>Doe</td>
+          <td>Doe</td>
+          <td>
+            <button type="button" class="btn btn-info">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+          <td>Doe</td>
+          <td>Doe</td>
+          <td>
+            <button type="button" class="btn btn-info">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+          <td>Doe</td>
+          <td>Doe</td>
+          <td>
+            <button type="button" class="btn btn-info">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+          <td>Doe</td>
+          <td>Doe</td>
+          <td>
+            <button type="button" class="btn btn-info">Edit</button>
+            <button type="button" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="page-section-container">
+    <div class="page-section">
+      <button type="button" class="btn btn-secondary">1</button>
+      <button type="button" class="btn btn-secondary">2</button>
+      <button type="button" class="btn btn-secondary">></button>
+    </div>
+    <div class="page-search-bar">
+      <input type="search" placeholder="Type a name">
+      <button>
+        <img src="   https://cdn-icons-png.flaticon.com/512/8915/8915520.png ">
+      </button>
+    </div>
+  </div>
+
 </body>
 </html>
